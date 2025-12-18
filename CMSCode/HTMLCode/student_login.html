@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student - Bahria University</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" href="https://cms.bahria.edu.pk/favicon.ico" />
+
+    <style>
+        html, body { height: 100%; margin: 0; }
+        body { 
+            background-color: #f8f9fa; 
+            padding-top: 110px; 
+            display: flex; flex-direction: column; 
+        }
+        .navbar-fixed-top { 
+            border-bottom: 3px solid #005F9C; 
+            background: #fff; 
+            min-height: 100px; 
+            display: flex; align-items: center; justify-content: center; 
+        }
+        .container-fluid { width: 100%; text-align: center; }
+        .navbar-header { float: none; display: inline-block; }
+        .navbar-brand { 
+            float: none; height: auto; padding: 15px; font-size: 28px; 
+            color: #333 !important; display: flex; align-items: center; justify-content: center; 
+        }
+        .centering-wrapper { 
+            flex: 1; display: flex; align-items: center; justify-content: center; 
+            width: 100%; padding-bottom: 50px; 
+        }
+        .login-box { width: 100%; max-width: 400px; }
+
+        .card-container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .page-title { margin-bottom: 30px; color: #005F9C; font-weight: bold; }
+        .input-group-addon { background-color: #005F9C; color: white; border-color: #005F9C; }
+        .btn-primary { background-color: #005F9C; border-color: #004F8C; font-weight: bold; }
+        .btn-primary:hover { background-color: #004F8C; }
+    </style>
+</head>
+<body>
+    <form onsubmit="alert('Simulation: Login button clicked!'); return false;" style="height: 100%; display: flex; flex-direction: column;">
+        
+        <header class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                   <a href="index.html" class="navbar-brand">
+                        <img src="BU-Logo.jpg" style="height: 80px; display: inline-block; margin-right: 15px;">
+                        Bahria University
+                    </a>
+                </div>
+            </div>
+        </header>
+        
+        <div class="centering-wrapper">
+            <div class="login-box card-container">
+                <div class="text-center" style="margin-bottom: 20px;">
+                    <h1 class="page-title">Student Portal</h1>
+                </div>
+
+                <div class="form-group">
+                    <label>Enrollment:</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input type="text" class="form-control" placeholder="01-234567-089" style="text-transform:uppercase;" />
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Password:</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input type="password" class="form-control" placeholder="Password" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Institute:</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-university"></i></span>
+                        <select class="form-control">
+                            <option value="">Select Campus</option>
+                            <option value="2">Karachi Campus</option>
+                            <option value="1">Islamabad E-8 Campus</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group" style="margin-top: 20px;">
+                    <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                </div>
+                
+                <div class="row" style="margin-top: 15px;">
+                    <div class="col-xs-6">
+                        <a href="#">New Student?</a>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="text-center" style="padding: 20px; color: #777;">
+            2025 © <a href="#">Bahria University</a>
+        </footer>
+    </form>
+</body>
+</html>
