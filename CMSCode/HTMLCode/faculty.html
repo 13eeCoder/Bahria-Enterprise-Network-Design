@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faculty Member - Bahria University</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="https://cms.bahria.edu.pk/favicon.ico" />
+    <style>
+        html, body { height: 100%; margin: 0; }
+        body { 
+            background-color: #f8f9fa; 
+            padding-top: 110px; 
+            display: flex; flex-direction: column; 
+        }
+        .navbar-fixed-top { 
+            border-bottom: 3px solid #615C5C; 
+            background: #fff; 
+            min-height: 100px; 
+            display: flex; align-items: center; justify-content: center; 
+        }
+        .container-fluid { width: 100%; text-align: center; }
+        .navbar-header { float: none; display: inline-block; }
+        .navbar-brand { 
+            float: none; height: auto; padding: 15px; font-size: 28px; 
+            color: #333 !important; display: flex; align-items: center; justify-content: center; 
+        }
+        .centering-wrapper { 
+            flex: 1; display: flex; align-items: center; justify-content: center; 
+            width: 100%; padding-bottom: 50px; 
+        }
+        .login-box { width: 100%; max-width: 400px; }
+
+        .panel-faculty { border-color: #615C5C; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .panel-faculty > .panel-heading { background-color: #615C5C; color: #fff; border-color: #615C5C; }
+        .btn-faculty { background-color: #615C5C; color: #fff; }
+        .btn-faculty:hover { background-color: #4e4a4a; color: #fff; }
+        .input-group-addon { background-color: #615C5C; color: white; border: none; }
+    </style>
+</head>
+<body>
+    <form onsubmit="alert('Faculty Login Simulated'); return false;" style="height: 100%; display: flex; flex-direction: column;">
+        <header class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="BU-Logo.jpg" style="height: 80px; display: inline-block; margin-right: 15px;">
+                        Bahria University
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="centering-wrapper">
+            <div class="login-box">
+                <h2 class="text-center" style="margin-bottom: 20px; color: #615C5C;">Faculty Portal</h2>
+                <div class="panel panel-faculty">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i class="fa fa-user"></i> Faculty Login</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label>Username:</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input type="text" class="form-control" placeholder="Username">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Password:</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Institute:</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-university"></i></span>
+                                <select class="form-control">
+                                    <option value="">Select Campus</option>
+                                    <option value="1">Islamabad E-8 Campus</option>
+                                    <option value="2">Karachi Campus</option>
+                                    <option value="3">Lahore Campus</option>
+                                    <option value="4">Health Sciences</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-faculty btn-block">Sign In</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="text-center" style="padding: 20px; color: #777;">
+            2025 © <a href="#">Bahria University</a>
+        </footer>
+    </form>
+</body>
+</html>
