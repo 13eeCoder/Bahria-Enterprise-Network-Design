@@ -23,4 +23,3 @@ A full-scale network infrastructure simulation for a dual-campus university. Thi
 
 ## 💻 Software Used
 * **Cisco Packet Tracer:** For network simulation and testing.
-* **VS Code:** For custom HTML/CSS portal development.
