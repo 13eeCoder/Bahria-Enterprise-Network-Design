@@ -1,5 +1,4 @@
 # University Enterprise Network Design & CMS Integration
-**Developer:** Bee 
 
 ## 📌 Project Overview
 A full-scale network infrastructure simulation for a dual-campus university. This project integrates hardware networking logic with a functional software-based Web Portal (CMS) to simulate a real-world campus environment.
