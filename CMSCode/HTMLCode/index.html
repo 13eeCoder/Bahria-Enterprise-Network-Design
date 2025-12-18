@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CMS - Bahria University</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style type="text/css">
+        html, body { height: 100%; margin: 0; }
+        body { 
+            background-color: #f4f4f4; 
+            padding-top: 110px; 
+            display: flex; flex-direction: column; 
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Header Centering */
+        .navbar-fixed-top { 
+            border-bottom: 1px solid #e7e7e7; 
+            background: #fff; 
+            min-height: 100px; 
+            display: flex; align-items: center; justify-content: center; 
+        }
+        .container-fluid { width: 100%; text-align: center; }
+        .navbar-header { float: none; display: inline-block; }
+        .navbar-brand { 
+            float: none; height: auto; padding: 15px; font-size: 28px; 
+            color: #005F9C !important; display: flex; align-items: center; justify-content: center; 
+            text-decoration: none; font-weight: bold;
+        }
+
+        /* Content Centering */
+        .centering-wrapper { 
+            flex: 1; display: flex; align-items: center; justify-content: center; 
+            width: 100%; padding-bottom: 50px; 
+        }
+        
+        .well { 
+            color: #FFFFFF; text-align: center; padding: 20px; margin-bottom: 20px; 
+            border-radius: 4px; box-shadow: 2px 2px 5px #888888;
+        }
+        .well h1 { font-size: 24px; margin-bottom: 15px; }
+        
+        .well.candidate { background: #005F9C; }
+        .well.student { background: #7A8C74; }
+        .well.faculty { background: #615C5C; }
+        .well.staff { background: #34495E; }
+        .well.alumni { background: #009fbc; }
+        
+        .btn-default { 
+            border: 1px solid #fff; background: transparent; color: #fff; 
+            padding: 10px 20px; text-decoration: none; display: inline-block; margin-top: 10px;
+        }
+        .btn-default:hover { background: #fff; color: #333; }
+    </style>
+</head>
+<body class="Asphalt">
+    
+    <header id="header" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-brand">
+                    <img src="BU-Logo.jpg" style="height: 80px; display: inline-block; margin-right: 15px;">
+                    Bahria University
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <div class="centering-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="col-md-11 col-md-offset-1">
+                        <div class="well candidate">
+                            <h1 class="text-center">Admission</h1>
+                            <a class="btn btn-default" href="admission.html">Apply Online</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="col-md-11">
+                        <div class="well student">
+                            <h1 class="text-center">Student</h1>
+                            <a class="btn btn-default" href="student_login.html">Sign In</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="well faculty">
+                        <h1 class="text-center">Faculty Member</h1>
+                        <a class="btn btn-default" href="faculty.html">Sign In</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="well staff">
+                        <h1 class="text-center">Administration Staff</h1>
+                        <a class="btn btn-default" href="admin_staff.html">Sign In</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="well alumni">
+                        <h1 class="text-center">Alumni</h1>
+                        <a class="btn btn-default" href="alumni.html">Sign In</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer id="footer" class="text-center" style="padding: 20px; color: #333;">
+        2025 © <a href="https://bahria.edu.pk/" target="_blank">Bahria University</a>
+    </footer>
+
+</body>
+</html>
