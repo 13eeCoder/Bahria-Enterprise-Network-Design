@@ -1,0 +1,28 @@
+Final Report: University Dual-Campus Network Infrastructure
+
+1. Introduction
+This project presents the design and implementation of a scalable enterprise network for a university. The objective was to create a seamless communication link between two distant campuses while providing localized software services (CMS) for students and staff.
+
+2. Network Architecture
+Main Campus (A): Comprises three buildings (Building A, B, and C) hosting specific departmental VLANs.
+
+Branch Campus (B): Connected via a Serial DCE/DTE interface to simulate long-distance data transmission.
+
+Dynamic Routing: The network uses RIPv2 to ensure that all routers can automatically update their routing tables without manual intervention.
+
+3. Implementation Details
+VLAN Configuration: Used to reduce broadcast traffic and logically organize departments.
+
+DHCP Services: Configured on the core routers to provide dynamic IP addresses to end-devices in Building A.
+
+DNS & Web Hosting: A local server resolves bahria.edu.pk and hosts a custom-built login portal for users.
+
+4. Verification & Testing
+Connectivity: Successful "ping" tests between all VLANs and campuses.
+
+Routing Table: Verified the propagation of RIPv2 routes across the dual-campus link.
+
+Web Access: Demonstrated that workstations can successfully resolve the URL and load the CMS landing page.
+
+5. Conclusion
+The project demonstrates a high level of proficiency in network planning, IP addressing, and integrated service hosting. The final system is robust, modular, and ready for further software expansion.
